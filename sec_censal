@@ -1,4 +1,5 @@
 #Primero descargamos del INE el zip con los ficheros de las secciones censales. El fichero que nos interesa es el que tiene extension .shp  "SECC_CPV_E_20111101_01_R_INE.shp"
+# https://www.ine.es/censos2011_datos/cartografia_censo2011_nacional.zip
 #la funcion devuelve el código de seccion censal
 
 import geopandas as gpd
