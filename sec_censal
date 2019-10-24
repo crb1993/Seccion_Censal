@@ -1,10 +1,12 @@
 #Primero descargamos del INE el zip con los ficheros de las secciones censales. El fichero que nos interesa es el que tiene extension .shp  "SECC_CPV_E_20111101_01_R_INE.shp"
 #la funcion devuelve el código de seccion censal
 
+import geopandas as gpd
+from shapely.geometry import Point
+from shapely.geometry.polygon import Polygon
+  
 def sec_censal (x,y,ruta_fichero):
-  import geopandas as gpd
-  from shapely.geometry import Point
-  from shapely.geometry.polygon import Polygon
+
 
   shapefile = gpd.read_file(ruta_fichero + "\\SECC_CPV_E_20111101_01_R_INE.shp")
 
