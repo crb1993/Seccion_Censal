@@ -7,8 +7,7 @@ from shapely.geometry import Point
 from shapely.geometry.polygon import Polygon
   
 def sec_censal (x,y,ruta_fichero):
-
-
+  
   shapefile = gpd.read_file(ruta_fichero + "\\SECC_CPV_E_20111101_01_R_INE.shp")
   point = Point(x,y) 
   # shapefile[shapefile.geometry.contains(punto)].NMUN devuelve el nombre del municipio al que pertenece
